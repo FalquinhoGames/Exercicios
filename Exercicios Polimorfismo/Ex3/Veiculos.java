@@ -14,8 +14,4 @@ public class Veiculos {
 	public String bater(String veiculo) {
 		return "O veiculo " + this.veiculo + " bateu no veiculo " + veiculo;
 	}
-
-	public String toString(){
-
-	}
 }
