@@ -23,7 +23,7 @@ public class ComissionEmployee {
 	 * METODOS *
 	 ***********/
 	public double earnings() {
-		return this.grossSales * this.comissionRate;
+		return grossSales * comissionRate;
 	}
 	
 	public String toString() {
