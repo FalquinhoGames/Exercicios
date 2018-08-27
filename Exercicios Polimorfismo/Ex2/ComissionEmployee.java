@@ -10,11 +10,10 @@ public class ComissionEmployee {
 	private String socialSecurityNumber;
 	private double grossSales;
 	private double comissionRate;
-
-	public ComissionEmployee(){
-
-	}
-
+	
+	/**************
+	 * CONSTRUTOR *
+	 **************/
 	public ComissionEmployee(String firstName, String lastName, String socialSecurityNumber, double grossSales, double comissionRate) {
 		this.firstName = firstName;
 		this.lastName = lastName;
@@ -22,7 +21,49 @@ public class ComissionEmployee {
 		this.grossSales = grossSales;
 		this.comissionRate = comissionRate;
 	}
-	
+	/*********************
+	 * Getters e Setters *
+	 *********************/
+	public String getFirstName() {
+		return firstName;
+	}
+
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+
+	public String getLastName() {
+		return lastName;
+	}
+
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+
+	public String getSocialSecurityNumber() {
+		return socialSecurityNumber;
+	}
+
+	public void setSocialSecurityNumber(String socialSecurityNumber) {
+		this.socialSecurityNumber = socialSecurityNumber;
+	}
+
+	public double getGrossSales() {
+		return grossSales;
+	}
+
+	public void setGrossSales(double grossSales) {
+		this.grossSales = grossSales;
+	}
+
+	public double getComissionRate() {
+		return comissionRate;
+	}
+
+	public void setComissionRate(double comissionRate) {
+		this.comissionRate = comissionRate;
+	}
+
 	/***********
 	 * METODOS *
 	 ***********/
