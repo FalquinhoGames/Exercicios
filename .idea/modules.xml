@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Exercicios.iml" filepath="$PROJECT_DIR$/Exercicios.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercicios Polimorfismo/Exercicios Polimorfismo.iml" filepath="$PROJECT_DIR$/Exercicios Polimorfismo/Exercicios Polimorfismo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p1_lpoo_2017_01/p1_lpoo_2017_01.iml" filepath="$PROJECT_DIR$/p1_lpoo_2017_01/p1_lpoo_2017_01.iml" />
     </modules>
   </component>
 </project>
