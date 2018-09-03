@@ -1,0 +1,12 @@
+Exceções são indicações de um problema que ocorre durante a execução de um programa.
+
+Exceções verificadas:
+	- Compilador impõe um requisito catch-or-declare;
+	- Subclasses de Exception, mas não da RuntimeException;
+	- Causadas por condições que não estão no controle do programa
+	- Exemplo: arquivo.
+	
+Exceções não verificadas:
+	- Subclasses diretas ou indiretas da classe RuntimeException;
+	- Costumam ser causadas por deficiências no código do programa.
+	- Exemplo: 
