@@ -1,1 +1,2 @@
-ohsduihauidhiawuhdiuw
+finally: sempre será executado depois do bloco try/catch. O importante é saber que esse bloco sempre será executado (exceto nos casos de encerramento da jvm System.exit()).
+	- Exemplo: abertura de determinado arquivo para escrita no mesmo, e no meio deste processo é lançada uma exceção por algum motivo, o arquivo não seria fechado, o que resultaria em deixar o arquivo aberto.
