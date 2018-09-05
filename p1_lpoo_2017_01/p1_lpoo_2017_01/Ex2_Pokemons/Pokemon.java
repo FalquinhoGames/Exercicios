@@ -1,4 +1,4 @@
-package Ex2_Pokemons.Main_Pokemons;
+package Ex2_Pokemons;
 
 public abstract class Pokemon {
     private String nomes;

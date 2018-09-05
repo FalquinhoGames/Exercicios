@@ -1,6 +1,4 @@
-package Ex2_Pokemons.Tipo_Pokemons;
-
-import Ex2_Pokemons.Main_Pokemons.Pokemon;
+package Ex2_Pokemons;
 
 public class Agua extends Pokemon{
 
