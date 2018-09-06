@@ -10,23 +10,23 @@ public class Normais extends Pokemon{
     public void ataque(Pokemon atacado) {
         if(atacado instanceof Agua) {
             //Não da dano
-            this.setNivelDeVida(getNivelDeVida() - 10);
+            this.setNivelDeVida(this.getNivelDeVida() - 10);
 
         }else if(atacado instanceof Eletricidade) {
             //Não da dano
-            this.setNivelDeVida(getNivelDeVida() - 10);
+            this.setNivelDeVida(this.getNivelDeVida() - 10);
 
         }else if(atacado instanceof Fogo) {
-            this.setNivelDeVida(getNivelDeVida() - 5);
+            this.setNivelDeVida(this.getNivelDeVida() - 5);
             atacado.setNivelDeVida(atacado.getNivelDeVida() - 10);
 
         }else if(atacado instanceof Normais) {
-            this.setNivelDeVida(getNivelDeVida() - 15);
+            this.setNivelDeVida(this.getNivelDeVida() - 15);
             atacado.setNivelDeVida(atacado.getNivelDeVida() - 10);
 
         }else if(atacado instanceof Terra) {
             //Não da dano
-            this.setNivelDeVida(getNivelDeVida() - 10);
+            this.setNivelDeVida(this.getNivelDeVida() - 10);
 
         }
     }

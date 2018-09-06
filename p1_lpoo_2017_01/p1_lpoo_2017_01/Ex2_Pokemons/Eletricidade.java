@@ -13,7 +13,7 @@ public class Eletricidade extends Pokemon{
             atacado.setNivelDeVida(atacado.getNivelDeVida() - 25);
 
         }else if(atacado instanceof Eletricidade) {
-            this.setNivelDeVida(getNivelDeVida() - 15);
+            this.setNivelDeVida(this.getNivelDeVida() - 15);
             atacado.setNivelDeVida(atacado.getNivelDeVida() - 10);
 
         }else if(atacado instanceof Fogo) {
@@ -26,7 +26,7 @@ public class Eletricidade extends Pokemon{
 
         }else if(atacado instanceof Terra) {
             //Não da dano
-            this.setNivelDeVida(getNivelDeVida() - 25);
+            this.setNivelDeVida(this.getNivelDeVida() - 25);
         }
     }
 

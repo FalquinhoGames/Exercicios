@@ -9,7 +9,7 @@ public class Agua extends Pokemon{
     @Override
     public void ataque(Pokemon atacado) {
         if(atacado instanceof Agua) {
-            this.setNivelDeVida(getNivelDeVida() - 15);
+            this.setNivelDeVida(this.getNivelDeVida() - 15);
             atacado.setNivelDeVida(atacado.getNivelDeVida() - 10);
 
         }else if(atacado instanceof Eletricidade) {
