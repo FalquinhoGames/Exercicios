@@ -1,4 +1,4 @@
-package Ex2_Pokemons;
+package Ex2;
 
 public class Terra extends Pokemon{
 

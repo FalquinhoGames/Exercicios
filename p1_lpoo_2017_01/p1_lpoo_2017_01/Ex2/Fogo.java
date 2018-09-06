@@ -1,33 +1,33 @@
-package Ex2_Pokemons;
+package Ex2;
 
-public class Eletricidade extends Pokemon{
+public class Fogo extends Pokemon{
 
-    public Eletricidade(String nomes, int nivelDeVida, int forca) {
+    public Fogo(String nomes, int nivelDeVida, int forca) {
         super(nomes, nivelDeVida, forca);
     }
 
     @Override
     public void ataque(Pokemon atacado) {
         if(atacado instanceof Agua) {
-            //Não recebe dano
-            atacado.setNivelDeVida(atacado.getNivelDeVida() - 25);
+            //Não da dano
+            this.setNivelDeVida(this.getNivelDeVida() - 25);
 
         }else if(atacado instanceof Eletricidade) {
+            //Não da dano
+            this.setNivelDeVida(this.getNivelDeVida() - 10);
+
+        }else if(atacado instanceof Fogo) {
             this.setNivelDeVida(this.getNivelDeVida() - 15);
             atacado.setNivelDeVida(atacado.getNivelDeVida() - 10);
 
-        }else if(atacado instanceof Fogo) {
-            //Não recebe dano
-            atacado.setNivelDeVida(atacado.getNivelDeVida() - 10);
-
         }else if(atacado instanceof Normais) {
-            //Não recebe dano
-            atacado.setNivelDeVida(getNivelDeVida() - 10);
+            this.setNivelDeVida(this.getNivelDeVida() - 10);
+            atacado.setNivelDeVida(atacado.getNivelDeVida() - 5);
 
         }else if(atacado instanceof Terra) {
             //Não da dano
             this.setNivelDeVida(this.getNivelDeVida() - 25);
+
         }
     }
-
 }

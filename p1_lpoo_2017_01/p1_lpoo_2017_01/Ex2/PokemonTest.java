@@ -1,4 +1,4 @@
-package Ex2_Pokemons;
+package Ex2;
 
 public class PokemonTest {
     public static void main(String[] args) {
