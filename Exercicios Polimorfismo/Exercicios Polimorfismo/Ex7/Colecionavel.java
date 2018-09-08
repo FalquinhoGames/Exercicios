@@ -9,6 +9,9 @@ public class Colecionavel {
     private Date data;
     private String[] autores;
 
+    public Colecionavel() {
+    }
+
     public Colecionavel(String nomes, Date data, String[] autores) {
         super();
         this.id = idGlobal;

@@ -1,8 +1,11 @@
 package Ex1;
 
 import java.util.Calendar;
+import java.util.Scanner;
 
 public class Empreendedor {
+    Scanner entrada = new Scanner(System.in);
+
     /*************
      * ATRIBUTOS *
      *************/
@@ -39,7 +42,12 @@ public class Empreendedor {
             return null;
         }
     }
-    public void cpf(){
-        long this.cpf = Long.parseLong("11111111111");
+    public String cpf(){
+        if(this.cpf.length() == 11) {
+            return this.cpf;
+        }else{
+            System.out.printf("CPF inválido, digite novamente");
+            return null;
+        }
     }
 }
