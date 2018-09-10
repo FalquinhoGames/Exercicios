@@ -1,0 +1,20 @@
+É o que apenas idealiza um tipo, define apenas um rascunho.Usa-se a palavra chave
+abstract para impedir que ela possa ser instanciada. Esse é o efeito direto de se
+usar o modificador abstract na declaração.
+
+Exemplo:
+
+public abstract class Funcionario {
+
+    public abstract double getBonificacao();
+
+    // outros atributos e métodos
+
+}
+
+Nesse exemplo, a classe e o metodo foram declarados como abstract, sendo assim, eles
+servem como modelos/moldes para outras classes, sendo que o método "getBonificacao",
+quando herdado para outras classes, será obrigado a reescrever como esse método deverá
+se comportar em certa classe. Como exemplo, quando criar a classe "Gerente", será
+obrigatório reescrever o metodo "getBonificao", definindo a bonifação a para o gerente,
+de formar diferenciada para outras classes.
