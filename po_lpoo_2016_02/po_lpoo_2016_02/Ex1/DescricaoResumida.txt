@@ -1,0 +1,57 @@
+SupoerHeroi:
+* ATRIBUTOS *
+- Nome original
+- Descrição
+- Data de criação
+- Pais natal
+- Nivel de resistencia
+- Estado de saude
+- Conjunto de 10 habilidades
+
+* METODOS *
+- machucar
+- ajudar
+
+- O nível de resistência de um super-herói é um valor entre 0 (morto) e 100 que indica quão forte e bem de saúde o superherói está.
+- Estado de saúde de um super-herói é associado ao seu nível de resistência: nível de resistência entre 0 e 30 indica um estado de saúde ruim, nível de resistência entre 31 e 70 indica um estado de saúde bom e nível de resistência entre 71 e 100 indica um estado de saúde excelente. 
+
+HEROIS:
+Homem de ferro:
+- Machuca::
+	- Menos 20 unidades de resistencia do adversario
+
+- Ajuda:
+	- Mais 5 unidades de resistencia de quem ajudou
+
+- Armazenar a versão atual de sua armadura (entre 1 e 10);
+- Armazenar a quantidade de namoradas atuais.
+
+Wolverine:
+- Machuca::
+	- Menos 1 unidade de resistencia do adversario
+
+- Ajuda:
+	- Mais 20 unidades de resistencia de quem ajudou
+
+- Armazenar a quantidade de adamantium (em miligramas e com duas casas decimais);
+- Armazenar o tempo de cicatrização (em minutos);
+- Quando ataca o Homem de Ferro, rouba uma de suas namoradas.
+
+Ciclope:
+- Machuca::
+	- Menos 10 unidade de resistencia do adversario
+
+- Ajuda:
+	- Mais 10 unidades de resistencia de quem ajudou
+
+- Toda vez que machuca o Wolverine, aumenta o tempo medio de cicatrização em 5 minutos;
+- Armazenar qual a marca do seu óculos atual (Oakley, HB ou Rayban).
+
+Coringa:
+- Machuca::
+	- Menos 1 unidade de resistencia do adversario
+
+- Ajuda:
+	- Mais 1 unidades de resistencia de quem ajudou
+
+- Armazenar em qual paus ele mora atualmente
