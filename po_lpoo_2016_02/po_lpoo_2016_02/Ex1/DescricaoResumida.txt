@@ -54,4 +54,4 @@ Coringa:
 - Ajuda:
 	- Mais 1 unidades de resistencia de quem ajudou
 
-- Armazenar em qual paus ele mora atualmente
+- Armazenar em qual pais ele mora atualmente

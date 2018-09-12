@@ -41,4 +41,13 @@ public class Ciclope extends SuperHeroi{
             this.setNivelDeResistencia(this.getNivelDeResistencia() + 10);
         }
     }
+
+    public void oculosAtual(String oculos){
+        if(oculos.equals("Oakley") || oculos.equals("oakley") || oculos.equals("HB") || oculos.equals("hb")
+                || oculos.equals("Rayban") || oculos.equals("rayban")){
+            System.out.println("Versão do ocurus é: " + oculos);
+        } else{
+            System.out.println("Hmmmmm... Ele não usa esse tipo de marcar barrela!");
+        }
+    }
 }

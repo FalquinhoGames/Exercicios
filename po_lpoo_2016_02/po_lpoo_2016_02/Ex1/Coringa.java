@@ -1,5 +1,6 @@
 package Ex1;
 
+import java.awt.geom.Path2D;
 import java.util.Calendar;
 
 public class Coringa extends SuperHeroi{
@@ -39,6 +40,18 @@ public class Coringa extends SuperHeroi{
 
         } else if(ajudado instanceof Coringa){
             this.setNivelDeResistencia(this.getNivelDeResistencia() + 1);
+        }
+    }
+
+    public void paisAtual(String pais){
+        char[] c = pais.toCharArray();
+
+        for(int i = 0; i < pais.length(); i++){
+            if(!Character.isDigit(c[i])){
+                System.out.println("Hmmmmmmm... acho que pais não tem numero");
+            }else{
+                System.out.println("Ele esta em " + pais);
+            }
         }
     }
 }

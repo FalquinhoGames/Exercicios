@@ -36,7 +36,13 @@ public abstract class SuperHeroi {
      * GETTERS E SETTERS *
      *********************/
     public void setNivelDeResistencia(int nivelDeResistencia) {
-        this.nivelDeResistencia = nivelDeResistencia;
+        if(getNivelDeResistencia() > 0 || getNivelDeResistencia() < 100){
+            this.nivelDeResistencia = nivelDeResistencia;
+        }else if(getNivelDeResistencia() <= 0){
+            System.out.println("Heroi sem resistencia!");
+        } else{
+            System.out.println("Valor de Resistencia invalido!");
+        }
     }
 
     public int getNivelDeResistencia() {
@@ -44,6 +50,23 @@ public abstract class SuperHeroi {
     }
 
     public void setEstadoDeSaude(int estadoDeSaude) {
-        this.estadoDeSaude = estadoDeSaude;
+        if(getEstadoDeSaude() > 0 || getNivelDeResistencia() <= 30){
+            System.out.println("Estado de saude RUIM!");
+            this.estadoDeSaude = estadoDeSaude;
+        } else if(getEstadoDeSaude() >= 31 || getNivelDeResistencia() <= 70){
+            System.out.println("Estado de saude BOM!");
+            this.estadoDeSaude = estadoDeSaude;
+        } else if(getEstadoDeSaude() >= 71 || getNivelDeResistencia() <= 100){
+            System.out.println("Estado de saude EXCELENTE!");
+            this.estadoDeSaude = estadoDeSaude;
+        } else if(getEstadoDeSaude() <= 0){
+            System.out.println("Heroi morto!");
+        } else if(getEstadoDeSaude() > 100){
+            System.out.println("Nivel de saude invalido");
+        }
+    }
+
+    public int getEstadoDeSaude() {
+        return estadoDeSaude;
     }
 }

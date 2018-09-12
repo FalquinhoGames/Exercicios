@@ -11,6 +11,9 @@ public class HomemDeFerro extends SuperHeroi{
         super(nomeOriginal, descricao, dataDeCriacao, paisNatal, nivelDeResistencia, estadoDeSaude);
     }
 
+    /***********
+     * METODOS *
+     ***********/
     @Override
     public void machucar(SuperHeroi atacado) {
         if(atacado instanceof HomemDeFerro){
@@ -40,6 +43,24 @@ public class HomemDeFerro extends SuperHeroi{
 
         } else if(ajudado instanceof Coringa){
             this.setNivelDeResistencia(this.getNivelDeResistencia() + 5);
+        }
+    }
+
+    public int versaoArmadura(int versao){
+        if(versao >= 1 || versao <= 10){
+            System.out.println("versão da armadura é: " + versao);
+            return versao;
+        } else{
+            return Integer.parseInt(null);
+        }
+    }
+
+    public int quantidadeNamoradas(int namoras){
+        if(namoras >= 0){
+            return namoras;
+        } else{
+            System.out.println("Valor de namoradas não é valido para o queridão Homem de Ferro");
+            return Integer.parseInt(null);
         }
     }
 }
